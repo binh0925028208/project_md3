@@ -1,0 +1,35 @@
+.admin_login_page {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20admin%2Fgradient-connection-background_52683-118592.jpg?alt=media&token=ddf999cb-80d2-4ae0-854e-2ce03a602c38);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.admin_login_background {
+    border-radius: 20px;
+    text-align: center;
+    color: #42BBFF;
+}
+
+.admin_login_box {
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.admin_input {
+    width: 300px;
+    height: 50px;
+    border: 2px solid violet;
+    color: #42BBFF;
+}

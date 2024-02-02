@@ -1,0 +1,12 @@
+.header_layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+
+.wrapper_layout_body {
+    display: flex;
+    padding-top: 140px;
+}

@@ -1,0 +1,67 @@
+#footer {
+    color: white;
+    background-image: url("/public/assets/img/outer-space-background.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer h3 {
+    color: rgb(217, 210, 210);
+}
+
+.footer_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_box_infor iframe {
+    width: 250px;
+    height: 180px;
+    padding: 10px 20px;
+}
+
+.footer_box_infor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+
+.footer_box_infor h5 {
+    color: #c4b4b4;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.footer_box_infor h5:hover {
+    color: white;
+}
+
+.footer_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_bottom p {
+    color: #c4b4b4;
+}
+
+
+.footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_bottom_social {
+    display: flex;
+    gap: 15px;
+    color: #c4b4b4;
+}

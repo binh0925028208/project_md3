@@ -1,0 +1,321 @@
+html {
+    color: black;
+    position: relative;
+}
+
+.user_setting_box {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(215, 212, 212);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 20px;
+}
+
+.user_avatar_big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.user_avatar_big img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.user_setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.user_setting p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 250px;
+    font-size: 13px;
+}
+
+.user_button {
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.user_button:hover {
+    background-color: rgb(52, 52, 52);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* user setting------------------------------------ */
+.historyCart {
+    min-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.history_cart_body,
+.history_cart_product_box {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+
+.history_cart_box {
+    width: 80%;
+    padding: 10px 20px;
+    color: rgb(87, 87, 87);
+}
+
+
+
+.history_box_data {
+    height: 50px;
+}
+
+.history_box_head {
+    background-color: rgb(46, 47, 47);
+    color: white;
+}
+
+
+
+.h_id {
+    width: 120px;
+    height: 40px;
+}
+
+.h_cart {
+    width: 400px;
+}
+
+
+.h_cart button {
+    width: 100%;
+    height: 30PX;
+    border-radius: 20px;
+    border: 0.5px solid rgb(203, 201, 201);
+}
+
+.h_cart button:hover {
+    background-color: rgb(187, 187, 187);
+    cursor: pointer;
+    color: white;
+}
+
+.h_price {
+    width: 350px;
+}
+
+.h_ship {
+    width: 400px;
+}
+
+.h_date {
+    width: 250px;
+}
+
+.h_delete {
+    width: 150px;
+}
+
+.h_delete button {
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+}
+
+.h_delete button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#history_box {
+    display: none;
+}
+
+.empty_cart_img {
+    padding-left: 400px;
+}
+
+.showUpCartBody {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 150px;
+    padding-left: 240px;
+    z-index: 12;
+}
+
+.showUpCartInfor {
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.history_product_name,
+.history_product_img {
+    cursor: pointer;
+}
+
+.history_product_name:hover {
+    color: rgb(248, 58, 58);
+}
+
+.closeBtn {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: 450px;
+    left: 10%;
+    opacity: 0.8;
+}
+
+.show_img {
+    width: 250px;
+}
+
+.show_name {
+    width: 400px;
+}
+
+.show_quantity {
+    width: 100px;
+}
+
+.show_brand {
+    width: 150px;
+}
+
+.show_price {
+    width: 200px;
+}
+
+.showUpCartInfo_head th {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    height: 30px;
+}
+
+#showUpCartInfor_list td {
+    text-align: center;
+    padding-top: 10px;
+    height: 100px;
+}
+
+#showUpCartInfor_list p {
+    font-size: 18px;
+
+}
+
+.cart_prod img {
+    width: 100px;
+    padding: 10px 10px;
+}
+
+/* ---------------product cart history */
+.showUpUserInfo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpUserInfo {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.popUpUserInfo input {
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid rgb(111, 111, 111);
+    padding: 10px 15px;
+
+}
+
+.updateYourInfoBtn {
+    background-color: rgb(97, 94, 94);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.updateYourInfoBtn:hover {
+    background-color: rgb(239, 107, 107);
+    color: black;
+    border: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.closeUserInfo {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.closeUserInfo:hover {
+    color: red;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+#displayShowUpUser {
+    display: none;
+}
+
+.history_product_head th {
+    background-color: rgb(81, 80, 80);
+    font-size: 15px;
+    color: white;
+}
+
+.modal_show_up {
+    padding-top: 50px;
+}

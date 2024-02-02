@@ -1,0 +1,36 @@
+.admin_head {
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #171B2D;
+    color: #55597D;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 200px;
+    z-index: 2;
+}
+
+.admin_tool {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin_search_button {
+    border-radius: 8px;
+    background: #1D2032;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.admin_search_input {
+    width: 450px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #42BBFF;
+}

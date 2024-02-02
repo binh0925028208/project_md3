@@ -1,0 +1,417 @@
+.admin_body {
+    display: flex;
+    gap: 80px;
+}
+
+.dashboard {
+    padding-top: 150px;
+}
+
+.header_admin {
+    display: flex;
+    background-color: #1B1B28;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header i {
+    color: white;
+}
+
+.header p {
+    color: white;
+}
+
+.header_box1 {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.header_box2 {
+    display: flex;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
+.header_box2_icon,
+.header_box2_text {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header_box2_text {
+    width: 150px;
+}
+
+#logOutAdmin {
+    cursor: pointer;
+}
+
+#select {
+    width: 100px;
+    height: 30px;
+    background-color: #1B1B28;
+    color: aliceblue;
+    border: none;
+}
+
+.admin_avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+/* -------------header */
+.side_menu_admin {
+    background-color: #282733;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 950px;
+    padding-top: 120px;
+}
+
+
+.custom_board {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+
+.dashBoard_minibox {
+    width: 100%;
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashBoard_minibox p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+
+.dashBoard_minibox p:hover {
+    color: white;
+
+}
+
+
+
+
+.custom_board h2 {
+    font-size: 17px;
+    font-weight: 400;
+    align-self: center;
+}
+
+.mini_box p {
+    color: #888C9F;
+    font-size: 15px;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    padding: 5px 5px;
+
+}
+
+.mini_box p:hover {
+    color: white;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.mini_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    height: 30px;
+}
+
+/* sidemenu */
+
+
+.admin_button {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.admin_main {
+    width: 100%;
+    height: 450px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#function_title {
+    font-size: 40px;
+}
+
+.admin_display_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.admin_box_1,
+.admin_box_2,
+.admin_box_3,
+.admin_box_4,
+.admin_box_5,
+.admin_box_6 {
+    display: flex;
+    gap: 10px;
+    height: 180px;
+    width: 350px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.admin_box_1 {
+    background-image: linear-gradient(to left, rgb(39, 103, 231), rgb(67, 135, 236), rgb(129, 201, 255));
+}
+
+.admin_box_2 {
+    background-image: linear-gradient(to left, rgb(238, 135, 45), rgb(246, 180, 93), rgb(241, 226, 114));
+}
+
+.admin_box_3 {
+    background-image: linear-gradient(to left, rgb(84, 224, 96), rgb(132, 237, 122), rgb(185, 244, 165));
+}
+
+.admin_box_4 {
+    background-image: linear-gradient(to left, rgb(199, 78, 243), rgb(217, 145, 244), rgb(236, 225, 240));
+}
+
+.admin_box_5 {
+    background-image: linear-gradient(to left, rgb(84, 224, 205), rgb(146, 230, 219), rgb(220, 230, 229));
+}
+
+.admin_box_6 {
+    background-image: linear-gradient(to left, rgb(247, 61, 70), rgb(238, 121, 127), rgb(241, 224, 224));
+}
+
+.admin_box_1:hover,
+.admin_box_2:hover,
+.admin_box_3:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+.admin_box_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.admin_mini_box_infor {
+    display: flex;
+    gap: 50px;
+    opacity: 0.8;
+}
+
+.admin_box_icon {
+    font-size: 80px;
+    opacity: 0.2;
+}
+
+.admin_shop_data {
+    padding-left: 150px;
+}
+
+/* admindashboard */
+
+
+.table_head {
+    text-align: center;
+    background-color: #6d6ec4;
+}
+
+.table_head th {
+    color: white;
+}
+
+.table_body {
+    text-align: center;
+}
+
+.table_id {
+    width: 80px;
+    height: 40px;
+}
+
+.table_user_id {
+    width: 100px;
+    height: 40px;
+}
+
+.table_order {
+    width: 100px;
+    height: 40px;
+}
+
+.table_address {
+    width: 300px;
+    height: 40px;
+}
+
+.table_img {
+    width: 300px;
+    height: 40px;
+
+}
+
+.table_name {
+    width: 250px;
+    height: 40px;
+    ;
+
+}
+
+.table_stock {
+    width: 80px;
+    height: 40px;
+    ;
+
+}
+
+.table_payment {
+    width: 150px;
+    height: 40px;
+    ;
+
+}
+
+.table_status {
+    width: 150px;
+    height: 40px;
+
+}
+
+.table_role {
+    width: 150px;
+    height: 40px;
+}
+
+.table_edit {
+    width: 220px;
+    height: 40px;
+    ;
+
+}
+
+.table_row td {
+    height: 70px;
+    background-color: #d8d8d8;
+    font-size: 18px;
+}
+
+
+
+.table_edit_btn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.table_edit_btn button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+td {
+    padding: 10px 10px;
+}
+
+.table_show_cart button {
+    font-size: 20px;
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.table_show_cart button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+}
+
+#logOutAdmin button {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.page {
+    display: flex;
+    gap: 20px;
+}
+
+.page span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+}
+
+.page span:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+.pieChart {
+    padding: 50px;
+}

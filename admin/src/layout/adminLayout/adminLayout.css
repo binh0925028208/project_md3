@@ -1,0 +1,20 @@
+.wrapper_adminLayout {
+    display: flex;
+    position: relative;
+}
+
+.wrapper_adminLayout_sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.wrapper_adminLayout_body {
+    padding-left: 200px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

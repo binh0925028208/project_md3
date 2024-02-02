@@ -1,0 +1,33 @@
+.all_product_list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+}
+
+.pagination button:hover {
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.btn_active {
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.btn_non_active {
+    background-color: transparent;
+}

@@ -1,0 +1,82 @@
+.banner_home {
+    display: flex;
+}
+
+.banner {
+    padding-top: 120px;
+}
+
+.freeShip_banner img {
+    transform: translateX(-400px);
+}
+
+.banner_img {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+
+
+}
+
+.banner_img img {
+    width: 100vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.banner_img button {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.banner_info {
+    background-image: linear-gradient(to right, #0AD0D2, rgb(37, 113, 228));
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.banner_info_text * {
+    color: white;
+}
+
+.banner_info_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner_info_box i {
+    color: white;
+}
+
+.banner_info_logo {
+    font-size: 55px;
+}
+
+.slide_of_banner {
+    width: 100%;
+    height: 450px;
+}
+
+.slide_of_banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.ant-carousel {
+    width: 100%;
+}

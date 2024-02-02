@@ -1,0 +1,33 @@
+#flow_contract {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    position: fixed;
+}
+
+.flow_call,
+.flow_mess {
+    background-color: rgb(239, 85, 85);
+    border-radius: 50%;
+    opacity: 0.4;
+    font-size: 27px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow_mess {
+    background-color: rgb(61, 148, 241);
+}
+
+.flow_call:hover,
+.flow_mess:hover {
+    opacity: 1;
+    transition: 0.5s;
+}

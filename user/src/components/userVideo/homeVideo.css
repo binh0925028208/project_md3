@@ -1,0 +1,35 @@
+.video {
+    padding-top: 30px;
+
+}
+
+.video_box {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20home%2Fouter-space-background.jpg?alt=media&token=b0c9325e-5640-4d15-b1a5-752af63dc7df);
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+
+.video_box_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video_box_text h4 {
+    font-size: 40px;
+    color: #f53c3c;
+}
+
+.video_box_text p {
+    color: white;
+    width: 300px;
+    font-size: 25px;
+}

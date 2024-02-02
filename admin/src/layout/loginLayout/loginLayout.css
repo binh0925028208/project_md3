@@ -1,0 +1,26 @@
+.login_page {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20home%2Floginback.jpg?alt=media&token=d9626a0d-e98c-4d5f-bb98-f1dc4d76d842);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_background {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.login_box {
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 80px;
+    padding-top: 20px;
+}
