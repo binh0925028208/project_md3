@@ -52,7 +52,7 @@ class ProductService {
     const products = await this.productRepository.getAllProducts();
     let productsNeed = products.reduce((result: any[], item: any) => {
       carts.forEach((element: any) => {
-        if (item.id == element.id && !result.includes(item)) {
+        if (item.id === element.id && !result.includes(item)) {
           result.push(item);
         }
       });
@@ -60,7 +60,7 @@ class ProductService {
     }, []);
     let arrNeed: any = carts.reduce((result: any[], item: any) => {
       productsNeed.forEach((element: any) => {
-        if (item.id == element.id) {
+        if (item.id === element.id) {
           result.push({
             id: item.id,
             stock: item.stock,

@@ -1,9 +1,8 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../configs/db.config";
-import Ratting from "./ratting.entity";
 
 const Product = sequelize.define(
-  "Product",
+  "products",
   {
     id: {
       primaryKey: true,

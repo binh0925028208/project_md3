@@ -21,17 +21,17 @@ const AdminLogin = () => {
   const dispatch = useDispatch();
   const onFinish = async (values: any) => {
     const response = await dispatch(handleLogin(formData) as any).unwrap();
-    if (response?.response?.status == 400) {
+    if (response?.response?.status === 400) {
       console.log(response.response.data);
       toastError("Email/Password is incorrect!");
       return;
     }
     console.log(response);
-    if (response?.status == 201 || response?.status == 200) {
+    if (response?.status === 201 || response?.status === 200) {
       if (response.data.user.status === false) {
         toastError("This account is Blocked");
       } else {
-        if (response.data.user.role == 2) {
+        if (response.data.user.role === 2) {
           navigate("/adminPage");
           toastSuccess("Welcome ADMIN");
         } else {
@@ -53,7 +53,7 @@ const AdminLogin = () => {
   return (
     <div className="admin_login_page">
       <ToastContainer />
-      <div className="admin_login_background">
+      <div className ="admin_login_background">
         <h2> HELLO ADMIN</h2>
         <div className="admin_login_box">
           <Form

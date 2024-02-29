@@ -23,6 +23,6 @@ const authMiddleware = (req: any, res: Response, next: NextFunction) => {
     });
   } catch (error) {
     res.status(400).json("Request failed");
-  } 
+  }
 };
 export default authMiddleware;

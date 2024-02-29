@@ -80,13 +80,13 @@ const Header = (): JSX.Element => {
       setSearch("");
     }
   };
-  useEffect(() => {
-    const getProductsSearch = async () => {
-      const productsSearch = await productService.onSearch(search);
-      setProductsData(productsSearch);
-    };
-    getProductsSearch();
-  }, [search]);
+  // useEffect(() => {
+  //   const getProductsSearch = async () => {
+  //     const productsSearch = await productService.onSearch(search);
+  //     setProductsData(productsSearch);
+  //   };
+  //   getProductsSearch();
+  // }, [search]);
   return (
     <div id="header">
       <section className="header_main_home">

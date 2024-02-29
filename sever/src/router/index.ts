@@ -8,7 +8,7 @@ import adminsController from "../controllers/adminController";
 
 const Router = (app: Express) => {
   app.use("/user", usersController);
-  app.use("/product", productController);
+  app.use("/products", productController);
   app.use("/orderItems", orderItemsController);
   app.use("/comment", commentController);
   app.use("/ratting", rattingController);

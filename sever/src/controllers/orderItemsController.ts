@@ -52,6 +52,7 @@ orderItemsController.patch("/:id", async (req: Request, res: Response) => {
     res.status(500).json({ msg: "Có lỗi xảy ra lúc cập nhật" });
   }
 });
+
 orderItemsController.delete("/:id", async (req: Request, res: Response) => {
   try {
     const id = Number(req.params.id);

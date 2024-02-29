@@ -62,7 +62,7 @@ const AdminUpdateProducts = (props: Props): JSX.Element => {
       props.offModalEdit();
       toastSuccess("Update successful");
     } catch (error: any) {
-      toastError("????????????????");
+      toastError("????????");
     }
   };
 

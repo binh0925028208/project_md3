@@ -5,7 +5,7 @@ class ApiService {
     return await baseAxios.post(endpoint, data);
   }
   async GetAll(endpoint: string): Promise<any> {
-    return await baseAxios.get(endpoint);
+    return await baseAxios.get(`${endpoint}`);
   }
   async GetById(endpoint: string, id: number | undefined): Promise<any> {
     return await baseAxios.get(`${endpoint}/${id}`);

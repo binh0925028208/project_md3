@@ -13,7 +13,8 @@ class ProductService {
     await this.productRepository.findProduct(id);
   }
   async getAllProduct() {
-    return await this.productRepository.getAllProduct();
+    const result: any = await this.productRepository.getAllProduct();
+    return result;
   }
   async createProduct(formRequest: any) {
     await this.productRepository.createProduct(formRequest);

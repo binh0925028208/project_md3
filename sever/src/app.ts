@@ -1,29 +1,41 @@
 import express, { urlencoded } from "express";
-import * as dotenv from "dotenv";
 import sequelize from "./configs/db.config";
-import createTable from "./entities";
+import cors from "cors";
 import Router from "./router";
-import uploadCloud from "./configs/multerCloud.config";
+import bodyParser from "body-parser";
+import createTable from "./entities";
+import * as dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import session from "express-session";
+import path from "path";
+import http from "http";
 dotenv.config();
-const app = express();
-const PORT = process.env.PORT;
-app.use(urlencoded());
-app.use(cookieParser());
-app.use(
+const server = express();
+server.use(cookieParser());
+server.use(
   session({
-    secret: "Dong",
+    secret: "binh",
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false },
   })
 );
+
+server.use(express.static("public"));
+const port = process.env.PORT || 8000;
+server.use(urlencoded());
+server.use(bodyParser.json());
 sequelize.authenticate();
+const app = http.createServer(server);
+server.use(
+  cors({
+    origin: ["http://localhost:3000", "http://localhost:3001"],
+    credentials: true,
+    optionsSuccessStatus: 200,
+  })
+);
+Router(server);
 createTable();
-
-Router(app);
-
 // app.post(
 //   "/uploads",
 //   uploadCloud.array("productImg", 10),
@@ -37,6 +49,6 @@ Router(app);
 //     res.json(filePaths);
 //   }
 // );
-app.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`server on port ${port}`);
 });

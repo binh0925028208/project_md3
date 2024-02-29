@@ -15,6 +15,7 @@ export class ProductRepository {
   }
   async getAllProducts(): Promise<any> {
     const result: any = await this.apiService.GetAll("products");
+    console.log(result);
     return result.data;
   }
   async getProduct() {

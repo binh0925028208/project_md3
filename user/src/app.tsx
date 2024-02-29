@@ -11,6 +11,7 @@ import ComingSoon from "./components/comingSoon/comingSoon";
 import UserHistory from "./components/userCartHistory/cartHistory";
 import P404Layout from "./layout/error/404Layout";
 function App() {
+  
   return (
     <div>
       <ToastContainer />

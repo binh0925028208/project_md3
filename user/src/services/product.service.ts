@@ -3,7 +3,7 @@ import UserRepository from "../repositories/user.repositories";
 import { ICart, IProduct } from "../types/interface";
 
 class ProductService {
-  private productRepository: any;
+  private productRepository: ProductRepository;
   private userRepository: UserRepository;
 
   constructor() {
@@ -12,6 +12,8 @@ class ProductService {
   }
   async getAllProduct() {
     const data = await this.productRepository.getAllProducts();
+    console.log(data);
+
     return data;
   }
   async getAll() {

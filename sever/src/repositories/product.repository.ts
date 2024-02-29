@@ -13,8 +13,8 @@ class ProductRepository {
   async createProduct(formRequest: any) {
     return await Product.create(formRequest);
   }
-  async deleteById(formUpdate: any,id: number) {
-    return await Product.update(formUpdate, {where: {id }});
+  async deleteById(formUpdate: any, id: number) {
+    return await Product.update(formUpdate, { where: { id } });
   }
 }
 
