@@ -3,11 +3,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const sequelize = new Sequelize(
-  "bdglcwdet2wc48k4y5nz",
-  "ut2eepzbd3wpsifw",
-  "Pm6XoZO7CMEr6HZhdoOw",
+  "b6iddjy3cn0uo7cqpoyx",
+  "u8yblj8lj7n8rlm0",
+  "GGLdeFXVmZ5jWvxTXKgF",
   {
-    host: "bdglcwdet2wc48k4y5nz-mysql.services.clever-cloud.com",
+    host: "b6iddjy3cn0uo7cqpoyx-mysql.services.clever-cloud.com",
     dialect: "mysql",
   }
 );
