@@ -34,6 +34,8 @@ server.use(
     optionsSuccessStatus: 200,
   })
 );
+console.log("hahahahah");
+
 Router(server);
 createTable();
 // app.post(
